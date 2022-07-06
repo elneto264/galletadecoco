@@ -17,8 +17,7 @@ Usar ``` npm install``` para instalar los modulos correspondientes, luego usar e
 ```sh 
 npm start
 ```
-
- para lazar la aplicacion 
+para lanzar la aplicacion desde la terminal
 
 ## Autor
 
