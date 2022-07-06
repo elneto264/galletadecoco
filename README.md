@@ -21,4 +21,4 @@ para lanzar la aplicacion desde la terminal
 
 ## Autor
 
-Ernesto Silva
+[Ernesto Silva Languasco](https://www.linkedin.com/in/esilvalan/)
