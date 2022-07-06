@@ -14,7 +14,7 @@ npm install
 
 Usar ```npm install``` para instalar los modulos correspondientes.
 
-Una vez terminadas las instalaciones correspondientes, crear el archivo .env en el root
+Una vez terminadas las instalaciones requeridas, crear el archivo .env en el root
 del proyecto y agregar las key acorde al .example para el uso de las variables de entorno.
 
 
