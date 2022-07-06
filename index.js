@@ -12,7 +12,7 @@ const guest = async() => {
         console.log('\n-----------------GuestPro--------------------------\n'.green)
 
         const instance = axios.create({
-            //baseURL: `https://admin.guestpro.com/apiv2?resource=invoice&task=get`,
+
             baseURL: 'https://admin.guestpro.com/apiv2',
             method:'POST',
             headers:{
@@ -33,11 +33,22 @@ const guest = async() => {
         console.log('Respuesta GuestPro', resp.data)
 
 
-
-
-
-
         console.log('\n-----------------Holded--------------------------\n'.red)
+        //Asignamos la data deseada de la respuesta para luego enviarla a la API de holded 
+
+        // let invoice = {
+        //     payment_id: resp.data.payment_id,
+        //     date: resp.data.date,
+        //     amount:resp.data.total_amount,
+        //     reference_code:resp.data.booking_id,
+        //     auth_code:resp.data.token,
+        //     notes:resp.data.notes,
+        //     bankId:'ES123456',
+        //     contactId:resp.data.customer.contact_id,
+            
+        // }
+
+        //Dummy data
         let invoice = {
             payment_id:'123456',
             date: 20181210,
@@ -51,6 +62,7 @@ const guest = async() => {
             contactId:'902potato'
             
         }
+
         console.log('Dummy data de invoice',invoice)
         //Payment GET nos debe devolver un array vacio ya que en la cuenta no hay pagos
         const options_get = {
@@ -67,7 +79,7 @@ const guest = async() => {
 
 
         //Payment POST nos debe devolver en la data 
-        //status con 1 que se creo, en info Created y por ultimo el id correspondiente
+        //un objeto con status, info y id
         const options_post = {
             method: 'POST',
             url: 'https://api.holded.com/api/invoicing/v1/payments',
@@ -106,6 +118,10 @@ const guest = async() => {
 
 
 guest()
+
+
+
+
 
 
 
