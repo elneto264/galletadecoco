@@ -1,23 +1,28 @@
-Tecnologia usada:
+Tecnología usada:
 NodeJs
 
 
-Prueba técnica para conexión de APIs
+Prueba técnica para conexión de APIs GuestPro y Holded
 
 
-## Instalar
+## Instalaciones
 
 ```sh
 cd pruebaCeroOne
 npm install
-npm start
 ```
 
-Usar ``` npm install``` para instalar los modulos correspondientes, luego usar el 
+Usar ```npm install``` para instalar los modulos correspondientes.
+
+Una vez terminadas las instalaciones correspondientes, crear el archivo .env en el root
+del proyecto y agregar las key acorde al .example para el uso de las variables de entorno.
+
+
+Usar el siguiente comando para lanzar la aplicación desde la terminal.
 ```sh 
 npm start
 ```
-para lanzar la aplicacion desde la terminal
+
 
 ## Autor
 
